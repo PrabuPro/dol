@@ -5,62 +5,7 @@
     margin-left: 2rem;
 }
 
-//////////////////////////////
-// SEARCH
-.search{
-    flex: 0 0 40%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &__input{
-        font-family: inherit;
-        font-size: inherit;
-        background-color: var(--color-grey-light-2);
-        border: none;
-        padding: .7rem 2rem;
-        border-radius: 100rem;
-        width: 90%;
-        transition: all .2s;
-        margin-right: -3.5rem;
-
-        &:focus{
-            outline: none;
-            width: 100%;
-        }
-
-        &::-webkit-input-placeholder{
-            font-weight: 100;
-            color: var(--color-grey-light-4);
-        }
-
-    }
-
-    &__input:focus + &__button{
-        background-color: var(--color-grey-light-2);        
-    }
-
-    &__button{
-        border: none;
-        background-color: var(--color-grey-light-2);
-
-        &:focus{
-            outline: none;
-
-        }
-
-        &:active{
-            transform: translateY(2px)
-        }
-    }
-
-    &__icon{
-        height: 2rem;
-        width: 2rem;
-        fill: var(--color-gray-dark-3);
-    }
-}
 
 //////////////////////////////
 // USER NAVIGATION
@@ -122,12 +67,27 @@
     list-style: none;
     margin-top: 3.5rem;
 
+    @media only screen and (max-width: $bp-medium) {
+        display: flex;
+        margin: 0;
+    }
+
     &__item{
         position: relative;
 
         &:not(:last-child){
             margin-bottom: .5rem; 
+
+             @media only screen and (max-width: $bp-medium) {
+                 margin: 0;
+             }
         }
+
+        @media only screen and (max-width: $bp-medium) {
+            flex: 1;
+        }
+
+       
     }
 
     &__item::before,
@@ -166,6 +126,16 @@
 
         display: flex;
         align-items: center;
+
+         @media only screen and (max-width: $bp-medium) {
+             justify-content: center;
+             padding: 2rem;
+         }
+
+         @media only screen and (max-width: $bp-small) {
+             flex-direction: column;
+             padding: 1.5rem .5rem;
+         }
     }
 
     &__icon{
@@ -173,6 +143,13 @@
         height: 1.75rem;
         margin-right: 2rem;
         fill: currentColor;
+
+        @media only screen and (max-width: $bp-small) {
+            margin-right: 0;
+            margin-bottom: .7rem;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
     }
 }
 
@@ -184,6 +161,10 @@
     color: var(--color-grey-light-4);
     text-align: center;
     padding: 2.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        display: none;
+    }
 }
 
 
@@ -254,74 +235,9 @@
 }
 
 
-//////////////////////////////
-// LIST
-.list{
-    list-style: none;
-    margin: 3rem 0;
-    padding: 3rem 0;
-    border-bottom: var(--line);
-    border-top: var(--line);
-    font-size: 1.4rem;
-    color: var(--color-grey-dark-2);
-    
-    display: flex;
-    flex-wrap:wrap; 
 
-    &__item{
-        flex: 0 0 50%;
-    }
 
-    &__item::before{
-        content: "";
-        display: inline-block;
-        height: 1rem;
-        width: 1rem;
-        margin-left: .7rem;
 
-        //Older browsers
-        // background-image: url(../img/chevron-thin-right.svg);
-        // background-size: cover;
-
-        //Newer browser mask
-        background-color: var(--color-primary);
-        -webkit-mask-image: url(../img/chevron-thin-right.svg);
-        -webkit-mask-size: cover;
-        mask-size: cover;
-    
-    }
-
-}
-
-//////////////////////////////
-// RECOMMEND
-.recommend{
-    font-size: 1.3rem;
-    color: var(--color-grey-dark-2);
-
-    display: flex;
-    align-items: center;
-
-    &__count{
-        margin-right: auto;
-    }
-
-    &__friends{
-
-    }
-
-    &__photo{
-        box-sizing: content-box;
-        height: 4rem;
-        width: 4rem;
-        border-radius: 50%;
-        border: 3px solid #fff;
-
-        &:not(:last-child){
-            margin-right: -1.5rem;
-        }
-    }
-}
 
 //////////////////////////////
 // REVIEWS
@@ -393,19 +309,7 @@ canvas {
     
 
 }
-//////////////////////////////
-// CALL TO ACTION
-.cta{
-    padding: 3.5rem;
-    text-align: center;
 
-    &__book-now{
-        font-size: 2rem;
-        font-weight: 300;
-        text-transform: uppercase;
-        margin-bottom: 2.5rem;
-    }
-}
 
 //////////////////////////////
 // BUTTON
