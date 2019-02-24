@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>DOL</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="img/logo.png" alt="logo" class="logo">
+            <nav class="user-nav">
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                    <span class="user-nav__notification">7</span>
+                </div>
+                <div class="user-nav__user">
+                    <img src="img/user-5.jpg" alt="User photo" class="user-nav__user-photo">
+                    <span class="user-nav__user-name">Admin</span>
+                </div>
+            </nav>
+
+        </header>
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="index.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-home2"></use>
+                            </svg>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="create-user.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-user-plus"></use>
+                            </svg>
+                            <span>Create User</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-location"></use>
+                            </svg>
+                            <span>Create Exam Center</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-equalizer"></use>
+                            </svg>
+                            <span>Asign Priviledges</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-enter"></use>
+                            </svg>
+                            <span>Sign Out</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="legal">
+                    &copy; 2018 by trillo. All right reserved.
+                </div>
+            </nav>
+            <main class="dashboard-view">
+                <div class="detail">
+                    <h1 style="margin: 0 0 10px 10;">Create Exam Center</h1>
+                    <div class="form-section">
+                        <div class="row">
+                            <form action="" method="" class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="name" type="text" class="validate">
+                                        <label for="name">Name</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="name" type="text" class="validate">
+                                        <label for="name">Location</label>
+                                    </div>
+                                </div>
+                              
+                                <div class="row">
+                                
+                                        <label for="email">Type</label>
+                                            <p>
+                                            <label>
+                                                <input type="checkbox" />
+                                                <span>Type 1</span>
+                                            </label>
+                                            </p>
+                                            <p>
+                                            <label>
+                                                <input type="checkbox" />
+                                                <span>Type 2</span>
+                                            </label>
+                                            </p>
+                                            <p>
+                                            <label>
+                                                <input type="checkbox" />
+                                                <span>Type 3</span>
+                                            </label>
+                                            </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="number" type="text" class="validate">
+                                        <label for="number">Contact Number</label>
+                                    </div>
+                                </div>
+                            
+
+                                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+            </main>
+        </div>
+    </div>
+    <script src="js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="js/chartjs.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+$(document).ready(function () {
+$('select').material_select();
+});
+    </script>
+</body>
+
+</html>

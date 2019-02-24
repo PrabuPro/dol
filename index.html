@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>DOL</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="img/logo.png" alt="logo" class="logo">
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                        </svg>
+                        <span class="user-nav__notification">7</span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="img/user-5.jpg" alt="User photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Admin</span>
+                    </div>
+                </nav>
+
+            </header>
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="index.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-home2"></use>
+                            </svg>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="create-user.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-user-plus"></use>
+                            </svg>
+                            <span>Create User</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="create-exam-center.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-location"></use>
+                            </svg>
+                            <span>Create Exam Center</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-equalizer"></use>
+                            </svg>
+                            <span>Asign Priviledges</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-enter"></use>
+                            </svg>
+                            <span>Sign Out</span>
+                        </a>
+                    </li>
+                </ul>
+
+                    <div class="legal">
+                        &copy; 2018 by trillo. All right reserved.
+                    </div>
+                </nav>
+                <main class="dashboard-view">
+                    <div class="detail">
+                        <h1 style="margin: 0 0 10px 10;">Hi Admin</h1>
+                        
+                        <div class="section-chart">
+                            <canvas id="myChart"></canvas>
+                            <canvas id="myChart-2"></canvas>
+                            
+                          
+                        </div>
+                        <div class="description">
+                                <table class="striped highlight">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Designation</th>
+                                            <th>City</th>
+                                        </tr>
+                                    </thead>
+                                
+                                    <tbody>
+                                        <tr>
+                                            <td>Alvin</td>
+                                            <td>Admin</td>
+                                            <td>Colombo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Alan</td>
+                                            <td>Officer</td>
+                                            <td>Colombo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jonathan</td>
+                                            <td>Office</td>
+                                            <td>Colombo</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                        </div>
+                        
+                    </div>
+                  
+
+                </main>
+            </div>
+        </div>
+        <script src="js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script src="js/chartjs.js"></script>
+    </body>
+</html>
