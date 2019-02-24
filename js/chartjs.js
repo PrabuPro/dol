@@ -25,7 +25,7 @@ var chart = new Chart(ctx, {
             }],
             yAxes: [{
                 ticks: {
-                    fontSize: 25
+                    fontSize: 20
                 }
             }],
             xAxes: [{
@@ -61,7 +61,7 @@ var chart = new Chart(cty, {
             }],
             yAxes: [{
                 ticks: {
-                    fontSize: 25
+                    fontSize: 20
                 }
             }],
             xAxes: [{
